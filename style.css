@@ -1,0 +1,41 @@
+body{
+    background-color:black;
+}
+
+h1{
+    color:aquamarine;
+    font-family:arial;
+}
+
+h2{
+    color:white;
+}
+
+h3{
+    color:white;
+    border:5px solid aquamarine;
+    background-color:dimgray;
+}
+
+h4{
+    color:white;
+    margin-left:50px;
+}
+
+h5{
+    color:white;
+    margin-left:100px;
+}
+
+p{
+    color:white;
+}
+
+a{
+    color:aquamarine;
+}
+
+img{
+    width:75%;
+    height:75%;
+}
