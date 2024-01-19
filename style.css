@@ -1,41 +1,122 @@
 body{
-    background-color:black;
-}
-
-h1{
-    color:aquamarine;
-    font-family:arial;
-}
-
-h2{
-    color:white;
-}
-
-h3{
-    color:white;
-    border:5px solid aquamarine;
-    background-color:dimgray;
-}
-
-h4{
-    color:white;
-    margin-left:50px;
-}
-
-h5{
-    color:white;
-    margin-left:100px;
+    background-color:#9b9fb5;
+    margin:0%;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    height:100vh;
+    font-family:"Garamond", serif;
 }
 
 p{
-    color:white;
+    color:black;
 }
 
-a{
-    color:aquamarine;
+/*grid, from ChatGPT*/
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Adjust the number of columns as needed */
+    gap: 1%; /* Adjust the gap between grid items */
 }
 
-img{
-    width:75%;
-    height:75%;
+.grid-item {
+    border: 1px solid #ccc;
+    box-sizing:content-box;
+    padding: 20px;
+    text-align: center;
+    border-radius:50%; /*makes grid item a circle -- rounds the border*/
+    overflow:hidden; /* makes sure content doesn't go past the circle*/
+    width:300px;
+    height:300px;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    background-color:#7A6174;
+}
+
+/*flip box */
+.flip-box {
+    background-color:transparent;
+    width:100%;
+    height:100%;
+    perspective: 1000px;
+    border-radius:50%; /*this makes it a circle!*/
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+.flip-box-inner {
+    position: relative;
+    width:100%;
+    height:100%;
+    text-align:center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+}
+
+.flip-box:hover .flip-box-inner{
+    transform: rotateY(180deg);
+   backface-visibility:hidden;
+}
+
+.flip-box-front, .flip-box-back{
+   position:absolute;
+    display:flex;
+   justify-content:center;
+   align-items:center;
+    width: 100%;
+    height:100%;
+    -webkit-backface-visibility:hidden; /*Safari*/
+    backface-visibility: hidden;
+}
+
+.flip-box img {
+    max-width:75%%;
+    max-height:75%;
+    object-fit:fit; /*for images*/
+}
+
+.flip-box p{
+    overflow:hidden;
+    max-width:75%;
+    max-height:75%;
+}
+
+.flip-box-front {
+    color:black;
+}
+
+
+.flip-box-back {
+    transform: rotateY(180deg);
+}
+
+#left{
+    background-color:#D1B1C8;
+    border-radius:50%;
+}
+
+#center{
+    background-color:#D1B1C8;
+    border-radius:50%;
+}
+
+#center-back{
+    background-color:transparent;
+    border-radius:50%;
+}
+
+.image-link{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    width:100%;
+    height:100%;
+}
+
+#right{
+    background-color:#D1B1C8;
+    border-radius:50%;
 }

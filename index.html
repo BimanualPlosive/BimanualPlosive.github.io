@@ -4,17 +4,60 @@
         <link rel="stylesheet" href="style.css"/>
     </head>
     <body>  <!--the playground!-->
-        <h1>Ezra's Website</h1> 
-        <h2>This text will be smaller.</h2>
-        <h3>This text will have a border.</h3>
-        <h4>Quieter...</h4>
-        <h5>And quieter....</h5>
-        <p>
-            Welcome to my <strong>webpage!</strong> What a <em>blast</em> to be typing code again.
-            This site is to reflect my learning in IS270-Systems & Infrastructures, a core requirement for my MLIS at UCLA.
-            <a href="https://www.digitaltransgenderarchive.net./files/db78tc32m" target="_blank">Here's a link to my favorite pic on the Digital Transgender Archive, just for fun.</a>
-        </p>
-        <a href="https://media.tenor.com/iCMTuBWsBcQAAAAi/rodentdance-rodent.gif" target="_blank"><img src="rat.png" alt="A rat rendered in the style of Old School Runescape stands on its back legs and wears sunglasses."/></a>
+        
+       
+        <div class="grid-container">
+            
+            <div class="grid-item">
+                <div class="flip-box">
+                    <div class="flip-box-inner" id="left">
+                        <div class="flip-box-front">
+                            <p>About</p>
+                        </div>
+                        <div class="flip-box-back" id="left">
+                            <!--<img src="rat.png"/>-->
+                            <p>This is Ezra's website for IS270, a core course for my MLIS at UCLA.
+                                I'll be updating this intermittently with something or other, but I'm just focusing on layout for today.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="grid-item">
+                <div class="flip-box">
+                    <div class="flip-box-inner" id="center">
+                        <div class="flip-box-front">
+                            <p>Hover here to see a friend!</p>
+                        </div>
+                        <div class="flip-box-back" id="center-back">
+                            <a href="https://www.youtube.com/watch?v=OXQwx1EolD8" class="image-link" target="_blank">
+                                <img src="rat.png" alt="Old School Runescape Rat Wearing Sunglasses."/>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="grid-item">
+                <div class="flip-box">
+                    <div class="flip-box-inner" id="right">
+                        <div class="flip-box-front">
+                            <p>Changed Elements</p>
+                        </div>
+                        <div class="flip-box-back" id="right">
+                            <!--<img src="rat.png"/>-->
+                            <p id="list">January 19, 2023 <br/>1. Created layout grid for circle elements using div classes and CSS.
+                                <br/>2. Created rotation element for inner circles, inspired by a classmate's website! (I can't remember whose, sorry!)
+                                <br/> 3. Used div IDs to create unique color schemes for each circle.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
     </body>
 </html>
 
